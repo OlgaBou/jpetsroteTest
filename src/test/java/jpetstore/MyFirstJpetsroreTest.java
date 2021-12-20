@@ -31,10 +31,6 @@ public class MyFirstJpetsroreTest {
         driver.findElement(By.xpath("//input[@name='newOrder']")).click();
         driver.findElement(By.xpath("//div[@id='Catalog']/a[contains(@href, 'confirmed=true')]")).click();   
         
-        String actualString = driver.findElement(By.xpath("//div[@id='Content']/ul/li/text()")).getText();
-        Assert.assertTrue(actualString.contains("Thank you, your order has been submitted."));
-        System.out.println("coucou");
-        
         driver.quit();
 
     /*    driver.findElement(By.xpath("//input[@aria-label=\"Rechercher\"]")).sendKeys("cat");
